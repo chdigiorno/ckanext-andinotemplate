@@ -129,6 +129,11 @@
                 {%- if c.action != 'login' -%}
                     <a class="header-link" href="{{ h.url_for(controller='package', action='search') }}">Datasets</a>
 
+                    <div class="header-link">
+                        <a href="{{ h.url_for(controller='user', action='plugin_test') }}">
+                            Test
+                        </a>
+                    </div>
                     <a class="header-link" href="https://github.com/datosgobar/portal-andino/" target="_blank">
                         Andino
                     </a>
