@@ -2,7 +2,7 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
 
-class AndinoTemplatePlugin(plugins.SingletonPlugin):
+class SeriesTiempoArLandingTemplatePlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
 
     # IConfigurer
@@ -10,4 +10,4 @@ class AndinoTemplatePlugin(plugins.SingletonPlugin):
     def update_config(self, config_):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('fanstatic', 'andinotemplate')
+        toolkit.add_resource('fanstatic', 'seriestiempoarlanding')

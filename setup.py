@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='''ckanext-andinotemplate''',
+    name='''ckanext-seriestiempoarlanding''',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -21,11 +21,11 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/datosgobar/ckanext-andinotemplate',
+    url='https://github.com/chdigiorno/ckanext-seriestiempoarlanding',
 
     # Author details
-    author='''Poli García''',
-    author_email='''poli@devartis.com''',
+    author='''Christian Digiorno''',
+    author_email='''cdigiorno@devartis.com''',
 
     # Choose your license
     license='AGPL',
@@ -80,7 +80,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points='''
         [ckan.plugins]
-        andinotemplate=ckanext.andinotemplate.plugin:AndinoTemplatePlugin
+        seriestiempoarlanding=ckanext.seriestiempoarlanding.plugin:SeriesTiempoArLandingTemplatePlugin
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
