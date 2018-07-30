@@ -1,5 +1,4 @@
-import ckan.lib.base as base
-from base import BaseController
+from ckan.lib.base import BaseController
 import logging
 logger = logging.getLogger(__name__)
 
