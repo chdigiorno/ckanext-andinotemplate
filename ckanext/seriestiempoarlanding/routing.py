@@ -1,5 +1,7 @@
 from ckanext.gobar_theme.routing import GobArRouter
 from routes.mapper import SubMapper
+import logging
+logger = logging.getLogger(__name__)
 
 
 class SeriesTiempoArRouter(GobArRouter):
@@ -11,19 +13,11 @@ class SeriesTiempoArRouter(GobArRouter):
         self.connect_test()
 
     def connect_test(self):
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
-        print("ROUTING")
+        logger.info('ROUTING')
+        logger.info('ROUTING')
+        logger.info('ROUTING')
+        logger.info('ROUTING')
+        logger.info('ROUTING')
+        logger.info('ROUTING')
         with SubMapper(self.route_map, controller=self.test_controller) as m:
             m.connect('test', '/test', action='test')
