@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 class SeriesTiempoArRouter(GobArRouter):
 
     def __init__(self, route_map):
-        self.test_controller = 'ckanext.seriestiempoarlanding.controller:SeriesTiempoArController'
+        self.test_controller = 'ckanext.seriestiempoarlanding.seriestiempoarcontroller:SeriesTiempoArController'
 
     def set_routes(self):
         self.connect_test()
