@@ -7,9 +7,4 @@ logger = logging.getLogger(__name__)
 class SeriesTiempoArController(BaseController):
 
     def test(self):
-        logger.info('CONTROLLER')
-        logger.info('CONTROLLER')
-        logger.info('CONTROLLER')
-        logger.info('CONTROLLER')
-        logger.info('CONTROLLER')
-        return base.render('template_test.html')
+        return base.render('config/config_01_title.html')

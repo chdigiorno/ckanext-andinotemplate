@@ -13,11 +13,5 @@ class SeriesTiempoArRouter(GobArRouter):
         self.connect_test()
 
     def connect_test(self):
-        logger.info('ROUTING')
-        logger.info('ROUTING')
-        logger.info('ROUTING')
-        logger.info('ROUTING')
-        logger.info('ROUTING')
-        logger.info('ROUTING')
         with SubMapper(self.route_map, controller=self.test_controller) as m:
             m.connect('test', '/test', action='test')
