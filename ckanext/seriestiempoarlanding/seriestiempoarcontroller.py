@@ -1,3 +1,4 @@
+import ckan
 import ckan.lib.base as base
 from base import BaseController
 import logging
