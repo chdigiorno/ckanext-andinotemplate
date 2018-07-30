@@ -11,5 +11,19 @@ class SeriesTiempoArRouter(GobArRouter):
         self.connect_test()
 
     def connect_test(self):
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
+        print("ROUTING")
         with SubMapper(self.route_map, controller=self.test_controller) as m:
             m.connect('test', '/test', action='test')
