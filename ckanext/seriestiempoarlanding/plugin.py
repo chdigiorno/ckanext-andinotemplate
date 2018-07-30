@@ -18,5 +18,6 @@ class SeriesTiempoArLandingTemplatePlugin(plugins.SingletonPlugin):
 
     def after_map(self, m):
         m.connect('test', "/test",
-                  controller='ckanext.seriestiempoarlanding.controller:SeriesTiempoArController', action='test')
+                  controller='ckanext.seriestiempoarlanding.seriestiempoarcontroller:SeriesTiempoArController',
+                  action='test')
         return m
