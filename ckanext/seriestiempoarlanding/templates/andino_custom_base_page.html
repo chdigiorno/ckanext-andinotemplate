@@ -29,6 +29,11 @@
                         </a>
                     </div>
                     <div class="navbar-link">
+                        <a href="{{ h.url('seccion-nueva') }}">
+                            SECCIÓN NUEVA
+                        </a>
+                    </div>
+                    <div class="navbar-link">
                         <a href="https://github.com/datosgobar/portal-andino/" target="_blank">
                             ANDINO
                         </a>
@@ -129,7 +134,7 @@
                 {%- if c.action != 'login' -%}
                     <a class="header-link" href="{{ h.url_for(controller='package', action='search') }}">Datasets</a>
 
-                    <a class="header-link" href="{{ h.url('test') }}">Test</a>
+                    <a class="header-link" href="{{ h.url('seccion-nueva') }}">Sección Nueva</a>
 
                     <a class="header-link" href="https://github.com/datosgobar/portal-andino/" target="_blank">
                         Andino

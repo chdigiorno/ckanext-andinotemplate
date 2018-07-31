@@ -1,28 +1,7 @@
-.. image:: https://travis-ci.org/chdigiorno/ckanext-seriestiempoarlanding.svg?branch=master
-    :target: https://travis-ci.org/chdigiorno/ckanext-seriestiempoarlanding
 
-.. image:: https://coveralls.io/repos/chdigiorno/ckanext-seriestiempoarlanding/badge.svg
-  :target: https://coveralls.io/r/chdigiorno/ckanext-seriestiempoarlanding
+[![Build Status](https://travis-ci.org/datosgobar/ckanext-andinotemplate.svg?branch=master)](https://travis-ci.org/datosgobar/ckanext-andinotemplate)
 
-.. image:: https://pypip.in/download/ckanext-seriestiempoarlanding/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-seriestiempoarlanding/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/ckanext-seriestiempoarlanding/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-seriestiempoarlanding/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-seriestiempoarlanding/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-seriestiempoarlanding/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-seriestiempoarlanding/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-seriestiempoarlanding/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-seriestiempoarlanding/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-seriestiempoarlanding/
-    :alt: License
+[![Docs Status](https://readthedocs.org/projects/ckanext-andinotemplate/badge/?version=master)](http://ckanext-andinotemplate.readthedocs.io/es/master/)
 
 # ckanext-seriestiempoarlanding
 
@@ -44,4 +23,13 @@ Para instalar `ckanext-seriestiempoarlanding`:
 3. Agregá `seriestiempoarlanding` a la lista de `ckan.plugins` en tu archivo de configuración de CKAN
    (por defecto ubicada en `/etc/ckan/default/production.ini` dentro del contenedor `portal`).
 
-4. Reiniciá Andino.
+4. Editar el archivo de configuración de Andino `/etc/ckan/default/production.ini` dentro del contenedor `portal` y agregar el setting `andino.base_page = andino_custom_base_page.html`, provisto por `ckanext-andinotemplate`.
+
+5. Reiniciá Andino.
+
+## Funcionalidades base
+
+El plugin template default permite agregar a tu instancia de Andino dos puntos de menú en la navegación superior de Andino:
+
+* Andino: Al hacer click redirige a la [documentación oficial de Portal Andino](http://portal-andino.readthedocs.io/).
+* Nueva Sección: Es una demostración de cómo agregar una ṕágina de contenido estático en Andino.
